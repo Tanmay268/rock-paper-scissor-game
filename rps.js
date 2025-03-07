@@ -18,8 +18,8 @@ front_page.addEventListener("click",(event)=>{
         document.getElementById("computer").classList.remove("shake");
     },1000);
     setTimeout(()=>{
-        document.getElementById("player").src = "/games/rock-paper-scissor/images-rps/" + player_choice + "-1.png";
-        document.getElementById("computer").src = "/games/rock-paper-scissor/images-rps/" + comp_choice + "-2.png";
+        document.getElementById("player").src = "/images/" + player_choice + "-1.png";
+        document.getElementById("computer").src = "/images/" + comp_choice + "-2.png";
     },1000);
 
 });
