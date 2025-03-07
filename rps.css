@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    background-color: antiquewhite;
+}
+.heading{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.main,
+.who-win{
+    display: none;
+}
+.main .left,
+.main .right,
+.main .middle{
+    /* border: 2px solid red; */
+    height: 55vh;
+    width: 50%;
+    margin-top: 2rem;
+}
+.main .middle{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 10rem;
+}
+.main .right .right-hand{
+    text-align: end;
+}
+
+.main .left p,
+.main .right p{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.main .left .left-hand img,
+.main .right .right-hand img{
+    mix-blend-mode: multiply;
+}
+.who-win{
+    /* border: 2px solid black; */
+    height: 18vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+/* ############################## FRONT PAGE STYLING ############################### */
+.front div{
+    /* border: 2px solid red; */
+    width: fit-content;
+}
+.front p{
+    font-size: 2rem;
+    /* border: 2px solid green; */
+    text-align: center;
+    width: 15rem;
+    margin-left: 30rem;
+}
+.front img{
+    mix-blend-mode: multiply;
+    height: 18rem;
+}
+.front #r{
+    transform: rotate(-90deg);
+    margin-top: 5rem;
+}
+.front #p{
+    transform: rotate(180deg);
+}
+.front .img-1{
+    float: left;
+    margin-top: 5rem;
+}
+.front .img-2{
+    float: left;
+    margin-left: 1rem;
+    margin-top: 8rem;
+}
+.front .img-3{
+    float: right;
+    margin-top: 5rem;
+}
+
+.front::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.front div:hover{
+    /* transform: scaleY(1.1); */
+    cursor: pointer;
+    mix-blend-mode: multiply;
+}
+
+
+/* ################################ Animation ################################3 */
+.shake{
+    animation: motion 0.5s ease-in-out infinite;
+}
+
+@keyframes motion{
+    0%{
+        transform-origin: 50% 50%;
+        transform: rotate(15deg);
+    }
+    50%{
+        transform-origin: 50% 50%;
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform-origin: 50% 50%;
+        transform: rotate(15deg);
+    }
+}
